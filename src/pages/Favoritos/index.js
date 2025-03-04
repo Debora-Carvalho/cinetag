@@ -10,7 +10,9 @@ function Favoritos() {
     return (
         <>
             <Banner imagem="favoritos"></Banner>
-            <Titulo>Meus Favoritos</Titulo>
+            <Titulo>
+                <h1>Meus Favoritos</h1>
+            </Titulo>
             <section className={styles.container}>
                 {favorito.map((fav) => {
                     return <Card {...fav} key={fav.id} />
